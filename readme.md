@@ -54,3 +54,19 @@ tsc --init
 5. Konfigurasikan typescript mu di file tsconfig.json
 
 ---
+
+## Tipe data string
+
+```
+/**
+   Kode di bawah akan menghasilkan error seperti ini
+   Type 'number' is not assignable to type 'string'.
+   karena typescript itu static type
+   ketik kita sudah membuat variable nama dengan value bertipe data string,
+   maka kita hanya bisa meng-assign kembali value yang bertipe data string
+*/
+let nama : string = "Rasyad";
+
+nama = 20;
+
+```
