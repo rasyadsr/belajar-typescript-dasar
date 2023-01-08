@@ -304,3 +304,26 @@ function multiply(a: number, b: number): number {
 const hasil = multiply(2, 3);
 console.log(hasil);
 ```
+
+---
+
+## Function as type
+
+```
+type Age = number;
+/**
+ * type Age bertipe number
+ */
+let age: Age = 10;
+console.log(age);
+
+type Tambah = (value1: number, value2: number) => number;
+/**
+ * MIsal kita merubah value2 menjadi tipe string itu akan error
+ * karena type Tambah value2 nya bertipe number
+ */
+const add: Tambah = (value1: number, value2: number): number => {
+  return value1 + value2;
+};
+console.log(add(10, 20));
+```
