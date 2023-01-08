@@ -101,3 +101,18 @@ let isMarried: boolean = false;
  */
 
 ```
+
+## Tipe data any
+
+- tipe data curang dimana kita bisa menaruh tipe data apapun
+- sama aja kayak pakai javascript 😂
+
+```
+let apapun_itu: any = "gelas";
+/**
+ * Ga akan ada yang error, semua nya berhasil
+ *
+    apapun_itu = 10;
+    apapun_itu = true;
+ */
+```

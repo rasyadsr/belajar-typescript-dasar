@@ -46,3 +46,16 @@ let isMarried: boolean = false;
  * Ini akan berhasil
     isMarried = false; 
  */
+
+/**
+ * ==========
+ * Any
+ * ==========
+ */
+let apapun_itu: any = "gelas";
+/**
+ * Ga akan ada yang error, semua nya berhasil
+ * 
+    apapun_itu = 10;
+    apapun_itu = true;
+ */
