@@ -66,3 +66,13 @@ const fullName = (first: string, last: string = "Uchiha"): string => {
   return first + " " + last;
 };
 console.log(fullName("Rasyad"));
+
+/**
+ * ==========
+ * Optional parameter
+ * ==========
+ */
+const kata = (value1: string, value2?: string): string => {
+  return value1 + " dan " + value2;
+};
+console.log(kata("hello"));

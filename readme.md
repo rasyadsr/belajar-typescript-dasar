@@ -370,3 +370,14 @@ const fullName = (first: string, last: string = "Uchiha"): string => {
 console.log(fullName("Rasyad")); // Rasyad Uchiha
 console.log(fullName('Uzumaki', 'Naruto')) // Uzumaki Naruto
 ```
+
+## Optional parameter
+
+- jika parameter di berikan optional parameter, ketika tidak di isi kan maka akan di beri nilai undefined
+
+```
+const kata = (value1: string, value2?: string): string => {
+  return value1 + " dan " + value2;
+};
+console.log(kata("hello")); // hello dan undefined
+```
