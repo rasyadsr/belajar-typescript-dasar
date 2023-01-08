@@ -55,3 +55,14 @@ const add: Tambah = (value1: number, value2: number): number => {
   return value1 + value2;
 };
 console.log(add(10, 20));
+
+/**
+ * ==========
+ * Function Default parameter
+ * ==========
+ */
+
+const fullName = (first: string, last: string = "Uchiha"): string => {
+  return first + " " + last;
+};
+console.log(fullName("Rasyad"));

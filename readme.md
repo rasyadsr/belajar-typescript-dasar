@@ -360,3 +360,13 @@ phone = 6281221572736;
 phone = "081224334732";
 phone = true; // ini akan error karena di set nya hanya untuk number dan string saja
 ```
+
+## Function default parameter
+
+```
+const fullName = (first: string, last: string = "Uchiha"): string => {
+  return first + " " + last;
+};
+console.log(fullName("Rasyad")); // Rasyad Uchiha
+console.log(fullName('Uzumaki', 'Naruto')) // Uzumaki Naruto
+```
