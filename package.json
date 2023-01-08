@@ -6,7 +6,7 @@
   "scripts": {
     "tsc": "rm -rf build/ && tsc",
     "ts": "rm -rf build/ && tsc -w",
-    "dev": "nodemon ./build/abstract.js"
+    "dev": "nodemon ./build/interface.js"
   },
   "devDependencies": {
     "nodemon": "^2.0.20",
