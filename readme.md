@@ -71,6 +71,8 @@ nama = 20;
 
 ```
 
+---
+
 ## Tipe data number
 
 ```
@@ -87,6 +89,8 @@ let umur: number = 18;
  */
 ```
 
+---
+
 ## Tipe data boolean
 
 ```
@@ -102,6 +106,8 @@ let isMarried: boolean = false;
 
 ```
 
+---
+
 ## Tipe data any
 
 - tipe data curang dimana kita bisa menaruh tipe data apapun
@@ -115,4 +121,19 @@ let apapun_itu: any = "gelas";
     apapun_itu = 10;
     apapun_itu = true;
  */
+```
+
+---
+
+## Array
+
+```
+let array: number[]; // deklarasi array of number
+array = [1, 2, 3];
+
+let array2: string[]; // deklarasi array of string
+array2 = ["hello", "world"];
+
+let array3: any[]; // deklarasi array of any
+array3 = ["hello", 1, true];
 ```
