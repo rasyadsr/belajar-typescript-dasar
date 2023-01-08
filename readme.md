@@ -307,7 +307,7 @@ console.log(hasil);
 
 ---
 
-## Function as type
+## Type Aliases
 
 ```
 type Age = number;
