@@ -349,3 +349,14 @@ let user: User = {
 };
 
 ```
+
+## Union Type
+
+- pada union type kita bisa menentukan tipe data varible lebih dari satu
+
+```
+let phone: number | string;
+phone = 6281221572736;
+phone = "081224334732";
+phone = true; // ini akan error karena di set nya hanya untuk number dan string saja
+```

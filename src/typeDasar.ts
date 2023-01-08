@@ -59,3 +59,13 @@ let apapun_itu: any = "gelas";
     apapun_itu = 10;
     apapun_itu = true;
  */
+
+/**
+ * ==========
+ * Union Type
+ * ==========
+ */
+let phone: number | string;
+phone = 6281221572736;
+phone = "081224334732";
+// phone = true; // ini akan error
