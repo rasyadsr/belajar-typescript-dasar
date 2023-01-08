@@ -534,3 +534,20 @@ console.log(admin.email); // Format email tidak valid!
 ```
 
 ---
+
+## Static property dan Static method
+
+- ketika sebuah property / method di berikan keyword static maka untuk cara mengakses nya kita tidak perlu melakukan intansiasi object
+
+```
+class Contoh {
+  public static getApapunItu = "apa weh";
+
+  public static getApaAja(): string {
+    return "apa ajah";
+  }
+}
+
+console.log(Contoh.getApapunItu);
+console.log(Contoh.getApaAja());
+```

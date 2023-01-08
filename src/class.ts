@@ -72,3 +72,19 @@ console.log(admin.email); // fulan@gmail.com
 
 admin.email = "ful";
 console.log(admin.email); // Format email tidak valid!
+
+/**
+ * ==========
+ * Static property dan Static method
+ * ==========
+ */
+class Contoh {
+  public static getApapunItu = "apa weh";
+
+  public static getApaAja(): string {
+    return "apa ajah";
+  }
+}
+
+console.log(Contoh.getApapunItu);
+console.log(Contoh.getApaAja());
