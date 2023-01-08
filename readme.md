@@ -381,3 +381,29 @@ const kata = (value1: string, value2?: string): string => {
 };
 console.log(kata("hello")); // hello dan undefined
 ```
+
+---
+
+## Class Dasar
+
+```
+/*
+Seperti biasa
+export class Person {
+  public name: string;
+
+  constructor(name: string) {
+    this.name = name;
+  }
+}
+*/
+
+/** constructor promote property */
+export class Person {
+  constructor(public name: string) {}
+}
+
+let personOne = new Person("Rasyad");
+console.log(personOne);
+
+```
