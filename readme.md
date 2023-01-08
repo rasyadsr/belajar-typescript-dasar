@@ -274,16 +274,6 @@ console.log(MonthOtherAgainAndOverAgain.MAY); // MEI
 ## Function
 
 ```
-/**
- * ==========
- * Return type function
- *
- * :string
- * :number
- * :void
- * ==========
- */
-
 function getNama(): string {
   return "Rasyad";
 }
@@ -301,4 +291,16 @@ function printName(): void {
 }
 printName();
 
+```
+
+---
+
+## Function argument type
+
+```
+function multiply(a: number, b: number): number {
+  return a * b;
+}
+const hasil = multiply(2, 3);
+console.log(hasil);
 ```

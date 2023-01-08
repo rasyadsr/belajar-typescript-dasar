@@ -1,10 +1,6 @@
 /**
  * ==========
  * Return type function
- *
- * :string
- * :number
- * :void
  * ==========
  */
 
@@ -24,3 +20,15 @@ function printName(): void {
   console.log("print Name from void function");
 }
 printName();
+
+/**
+ * ==========
+ * function argument type
+ * ==========
+ */
+
+function multiply(a: number, b: number): number {
+  return a * b;
+}
+const hasil = multiply(2, 3);
+console.log(hasil);
