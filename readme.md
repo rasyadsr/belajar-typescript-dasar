@@ -438,3 +438,44 @@ class Admin extends Role {
 let admin = new Admin("Fulan");
 console.log(admin);
 ```
+
+---
+
+## Super constrcutor
+
+- kita perlu menambahkan parameter parent constructor pada parameter child construct nya juga
+
+```
+export class Role {
+  constructor(public name: string) {}
+
+  setName(value: string): void {
+    this.name = value;
+  }
+
+  getName(): string {
+    return this.name;
+  }
+}
+
+class Admin extends Role {
+  read: boolean = true;
+  write: boolean = true;
+  phone: string;
+
+  constructor(name: string, phone: string) {
+    super(name); // memberi parameter pada parent constructor nya menggunakan function super()
+    this.phone = phone;
+  }
+
+  getRole(): { read: boolean; write: boolean } {
+    return {
+      read: this.read,
+      write: this.write,
+    };
+  }
+}
+
+let admin = new Admin("Fulan", "08168432463278");
+console.log(admin);
+```
