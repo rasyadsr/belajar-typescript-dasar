@@ -70,3 +70,34 @@ let nama : string = "Rasyad";
 nama = 20;
 
 ```
+
+## Tipe data number
+
+```
+let umur: number = 18;
+/**
+ * ini akan error karena bukan bertipe data number
+    umur = "20";
+    umur = true
+ */
+/**
+ * Ini akan berhasil
+    umur = 20;
+ *
+ */
+```
+
+## Tipe data boolean
+
+```
+let isMarried: boolean = false;
+/**
+ * Ini akan error bukan bertipe data boolean
+   isMarried = "belum";
+ */
+/**
+ * Ini akan berhasil
+    isMarried = false;
+ */
+
+```
