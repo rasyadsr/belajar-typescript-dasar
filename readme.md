@@ -479,3 +479,58 @@ class Admin extends Role {
 let admin = new Admin("Fulan", "08168432463278");
 console.log(admin);
 ```
+
+---
+
+## Getter dan setter
+
+- Getter mendapatkan value
+- Setter memberikan value yang dimana di dalamnya bisa terdapat validasi
+
+```
+class Admin extends Role {
+  read: boolean = true;
+  write: boolean = true;
+  phone: string;
+  // kasih default value misal string kosong atau 0
+  // di kasih _ di awal biar nama setter nya bisa email, this property nya jadi this._email
+  private _email: string = "";
+
+  constructor(name: string, phone: string) {
+    super(name);
+    this.phone = phone;
+  }
+
+  getRole(): { read: boolean; write: boolean } {
+    return {
+      read: this.read,
+      write: this.write,
+    };
+  }
+
+  /** Function setter tidak boleh mereturn apapun, ga boleh di kasih void / any juga */
+  set email(value: string) {
+    /** Contoh validasi */
+    if (value.length < 5) {
+      this._email = "Format email tidak valid!";
+      return;
+    }
+    this._email = value;
+  }
+
+  get email(): string {
+    return this._email;
+  }
+}
+
+let admin = new Admin("Fulan", "08168432463278");
+// console.log(admin);
+
+admin.email = "fulan@gmail.com";
+console.log(admin.email); // fulan@gmail.com
+
+admin.email = "ful";
+console.log(admin.email); // Format email tidak valid!
+```
+
+---
