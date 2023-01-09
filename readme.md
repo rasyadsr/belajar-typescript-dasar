@@ -35,7 +35,7 @@ yarn add global typescript // install secara global
 
 3. Menambahkan script pada package.json
 
-```json
+```ts
 
 "scripts": {
 /* Menghapus semua file yang ada di folder build kemudia melakukan compile pada file typescript nya sehingga menghasilkan file javascript digukan untuk tahap production */
