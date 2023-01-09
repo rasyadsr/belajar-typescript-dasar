@@ -38,23 +38,15 @@ yarn add global typescript // install secara global
 ```json
 
 "scripts": {
-/*
-*
-* Menghapus semua file yang ada di folder build kemudia melakukan compile pada file typescript nya
-* sehingga menghasilkan file javascript digukan untuk tahap production
-*
-*/
+// Menghapus semua file yang ada di folder build kemudia melakukan compile pada file typescript nya
+// sehingga menghasilkan file javascript digukan untuk tahap production
 "tsc": "rm -rf build/ && tsc",
 
-/**
-    Menghapus semua file yang ada di folder build kemudia melakukan compile pada file typescript nya
-    sehingga menghasilkan file javascript namun secara realtime -w itu adalah watch dan digunakan untuk tahap development
-*/
+// Menghapus semua file yang ada di folder build kemudia melakukan compile pada file typescript nya
+// sehingga menghasilkan file javascript namun secara realtime -w itu adalah watch dan digunakan untuk tahap development
 "ts": "rm -rf build/ && tsc -w",
 
-/**
-    Menjalankan file index.js yang berada di folder build menggunakan nodemon
-*/
+// Menjalankan file index.js yang berada di folder build menggunakan nodemon
 "dev": "nodemon ./build/index.js"
 
 },
